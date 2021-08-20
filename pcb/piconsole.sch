@@ -1,0 +1,917 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D3
+U 1 1 60D1EC66
+P 3175 5525
+F 0 "D3" H 3168 5742 50  0000 C CNN
+F 1 "YELLOW" H 3168 5651 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 3175 5525 50  0001 C CNN
+F 3 "~" H 3175 5525 50  0001 C CNN
+	1    3175 5525
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 60D1F1D3
+P 3175 5975
+F 0 "D4" H 3168 6192 50  0000 C CNN
+F 1 "GREEN" H 3168 6101 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 3175 5975 50  0001 C CNN
+F 3 "~" H 3175 5975 50  0001 C CNN
+	1    3175 5975
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 60D25AD7
+P 5675 5800
+F 0 "BZ1" H 5827 5829 50  0000 L CNN
+F 1 "Buzzer" H 5827 5738 50  0000 L CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 5650 5900 50  0001 C CNN
+F 3 "~" V 5650 5900 50  0001 C CNN
+	1    5675 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Optical:LDR03 R6
+U 1 1 60D266C8
+P 7775 4125
+F 0 "R6" H 7845 4171 50  0000 L CNN
+F 1 "LDR" H 7845 4080 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_5.0x4.1mm_P3mm_Vertical" V 7950 4125 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 7775 4075 50  0001 C CNN
+	1    7775 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D1
+U 1 1 60D27B37
+P 3125 6425
+F 0 "D1" H 3075 6715 50  0000 C CNN
+F 1 "IR" H 3075 6624 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 3125 6600 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 3075 6425 50  0001 C CNN
+	1    3125 6425
+	-1   0    0    1   
+$EndComp
+$Comp
+L eduardofilo_symbols:raspberrypi-pico-module U1
+U 1 1 60D1C199
+P 2325 2300
+F 0 "U1" H 2325 3515 50  0000 C CNN
+F 1 "Pico" H 2325 3424 50  0000 C CNN
+F 2 "eduardofilo_footprints:raspberrypi-pico-module" H 2325 1100 50  0001 C CNN
+F 3 "" H 2325 1100 50  0001 C CNN
+	1    2325 2300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	475  4250 4250 4250
+Text GLabel 1100 4900 0    50   Output ~ 0
+SW_Up
+$Comp
+L power:GND #PWR0101
+U 1 1 60D6A411
+P 1700 7325
+F 0 "#PWR0101" H 1700 7075 50  0001 C CNN
+F 1 "GND" H 1705 7152 50  0000 C CNN
+F 2 "" H 1700 7325 50  0001 C CNN
+F 3 "" H 1700 7325 50  0001 C CNN
+	1    1700 7325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4900 1700 4900
+Wire Wire Line
+	1700 4900 1700 5350
+Wire Wire Line
+	1600 5350 1700 5350
+Connection ~ 1700 5350
+Wire Wire Line
+	1700 5350 1700 5800
+Wire Wire Line
+	1600 5800 1700 5800
+Connection ~ 1700 5800
+Wire Wire Line
+	1700 5800 1700 6250
+Wire Wire Line
+	1600 6250 1700 6250
+Connection ~ 1700 6250
+Wire Wire Line
+	1700 6250 1700 6700
+Wire Wire Line
+	1600 6700 1700 6700
+Connection ~ 1700 6700
+Wire Wire Line
+	1700 6700 1700 7150
+Wire Wire Line
+	1100 4900 1200 4900
+Text GLabel 1100 5350 0    50   Output ~ 0
+SW_Down
+Text GLabel 1100 5800 0    50   Output ~ 0
+SW_Left
+Text GLabel 1100 6250 0    50   Output ~ 0
+SW_Right
+Text GLabel 1100 6700 0    50   Output ~ 0
+SW_A
+Wire Wire Line
+	1100 5350 1200 5350
+Wire Wire Line
+	1100 5800 1200 5800
+Wire Wire Line
+	1100 6250 1200 6250
+Wire Wire Line
+	1100 6700 1200 6700
+$Comp
+L Device:R R1
+U 1 1 60D8B31D
+P 3575 5050
+F 0 "R1" V 3368 5050 50  0000 C CNN
+F 1 "330" V 3459 5050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3505 5050 50  0001 C CNN
+F 3 "~" H 3575 5050 50  0001 C CNN
+	1    3575 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60D8C8B8
+P 3575 6425
+F 0 "R4" V 3368 6425 50  0000 C CNN
+F 1 "47" V 3459 6425 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3505 6425 50  0001 C CNN
+F 3 "~" H 3575 6425 50  0001 C CNN
+	1    3575 6425
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60D8CDC9
+P 3575 5975
+F 0 "R3" V 3368 5975 50  0000 C CNN
+F 1 "330" V 3459 5975 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3505 5975 50  0001 C CNN
+F 3 "~" H 3575 5975 50  0001 C CNN
+	1    3575 5975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3325 5050 3425 5050
+Wire Wire Line
+	3325 5525 3425 5525
+Wire Wire Line
+	3325 5975 3425 5975
+Wire Wire Line
+	3325 6425 3425 6425
+$Comp
+L power:GND #PWR0102
+U 1 1 60DB0C4B
+P 3875 6750
+F 0 "#PWR0102" H 3875 6500 50  0001 C CNN
+F 1 "GND" H 3880 6577 50  0000 C CNN
+F 2 "" H 3875 6750 50  0001 C CNN
+F 3 "" H 3875 6750 50  0001 C CNN
+	1    3875 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 5050 3875 5050
+Wire Wire Line
+	3875 5050 3875 5525
+Wire Wire Line
+	3725 5525 3875 5525
+Connection ~ 3875 5525
+Wire Wire Line
+	3875 5525 3875 5975
+Wire Wire Line
+	3725 5975 3875 5975
+Connection ~ 3875 5975
+Wire Wire Line
+	3875 5975 3875 6425
+Wire Wire Line
+	3725 6425 3875 6425
+Connection ~ 3875 6425
+Wire Wire Line
+	3875 6425 3875 6750
+Text GLabel 2875 5050 0    50   Input ~ 0
+L_Red
+Text GLabel 2875 5525 0    50   Input ~ 0
+L_Yellow
+Text GLabel 2875 5975 0    50   Input ~ 0
+L_Green
+Text GLabel 2875 6425 0    50   Input ~ 0
+L_IR
+Wire Wire Line
+	2875 5050 3025 5050
+Wire Wire Line
+	2875 5525 3025 5525
+Wire Wire Line
+	2875 5975 3025 5975
+Wire Wire Line
+	2875 6425 3025 6425
+Wire Notes Line
+	4250 475  4250 7775
+Wire Notes Line
+	2125 4250 2125 7775
+$Comp
+L Device:R R2
+U 1 1 60D8B726
+P 3575 5525
+F 0 "R2" V 3368 5525 50  0000 C CNN
+F 1 "330" V 3459 5525 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3505 5525 50  0001 C CNN
+F 3 "~" H 3575 5525 50  0001 C CNN
+	1    3575 5525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60DD7493
+P 7775 3625
+F 0 "R5" V 7568 3625 50  0000 C CNN
+F 1 "10K" V 7659 3625 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7705 3625 50  0001 C CNN
+F 3 "~" H 7775 3625 50  0001 C CNN
+	1    7775 3625
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR0103
+U 1 1 60DD7F45
+P 7775 4450
+F 0 "#PWR0103" H 7775 4200 50  0001 C CNN
+F 1 "GNDA" H 7780 4277 50  0000 C CNN
+F 2 "" H 7775 4450 50  0001 C CNN
+F 3 "" H 7775 4450 50  0001 C CNN
+	1    7775 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 8000 3875 2    50   Output ~ 0
+ADC2
+Text GLabel 3150 1950 2    50   Input ~ 0
+ADC2
+Wire Wire Line
+	2875 1950 3150 1950
+$Comp
+L power:VDDA #PWR0104
+U 1 1 60DE0210
+P 3575 1775
+F 0 "#PWR0104" H 3575 1625 50  0001 C CNN
+F 1 "VDDA" H 3590 1948 50  0000 C CNN
+F 2 "" H 3575 1775 50  0001 C CNN
+F 3 "" H 3575 1775 50  0001 C CNN
+	1    3575 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0105
+U 1 1 60DE3BF5
+P 3575 2150
+F 0 "#PWR0105" H 3575 1900 50  0001 C CNN
+F 1 "GNDA" H 3580 1977 50  0000 C CNN
+F 2 "" H 3575 2150 50  0001 C CNN
+F 3 "" H 3575 2150 50  0001 C CNN
+	1    3575 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 2050 3575 2050
+Wire Wire Line
+	3575 2050 3575 2150
+Wire Wire Line
+	2875 1850 3575 1850
+Wire Wire Line
+	3575 1850 3575 1775
+Text GLabel 1475 3250 0    50   Input ~ 0
+SW_Up
+Text GLabel 1475 3150 0    50   Input ~ 0
+SW_Down
+Text GLabel 1475 2950 0    50   Input ~ 0
+SW_Left
+Text GLabel 1475 2850 0    50   Input ~ 0
+SW_Right
+Text GLabel 1475 2750 0    50   Input ~ 0
+SW_A
+Wire Wire Line
+	1475 2750 1775 2750
+Wire Wire Line
+	1475 2850 1775 2850
+Wire Wire Line
+	1475 2950 1775 2950
+Wire Wire Line
+	1475 3150 1775 3150
+Wire Wire Line
+	1475 3250 1775 3250
+$Comp
+L power:GND #PWR0106
+U 1 1 60E07957
+P 5400 6025
+F 0 "#PWR0106" H 5400 5775 50  0001 C CNN
+F 1 "GND" H 5405 5852 50  0000 C CNN
+F 2 "" H 5400 6025 50  0001 C CNN
+F 3 "" H 5400 6025 50  0001 C CNN
+	1    5400 6025
+	1    0    0    -1  
+$EndComp
+Text GLabel 5275 5700 0    50   Input ~ 0
+Buzzer
+Wire Wire Line
+	5400 6025 5400 5900
+Wire Wire Line
+	5400 5900 5575 5900
+Text GLabel 1475 2650 0    50   Output ~ 0
+Buzzer
+Wire Wire Line
+	1775 2650 1475 2650
+Wire Notes Line
+	6950 6550 4250 6550
+$Comp
+L power:GND #PWR0107
+U 1 1 60E1DE26
+P 5100 1675
+F 0 "#PWR0107" H 5100 1425 50  0001 C CNN
+F 1 "GND" H 5105 1502 50  0000 C CNN
+F 2 "" H 5100 1675 50  0001 C CNN
+F 3 "" H 5100 1675 50  0001 C CNN
+	1    5100 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5325 1650 5325 1600
+Wire Wire Line
+	5325 1600 5100 1600
+Wire Wire Line
+	5100 1600 5100 1675
+Text GLabel 5825 1450 1    50   Input ~ 0
+OLED_DC
+Text GLabel 5925 1450 1    50   Input ~ 0
+OLED_CS
+Text GLabel 5725 1450 1    50   Input ~ 0
+OLED_RES
+$Comp
+L eduardofilo_symbols:OLED-SSD1306-SPI U2
+U 1 1 60D1D0B3
+P 5625 2050
+F 0 "U2" H 5250 1500 50  0000 L CNN
+F 1 "OLED" H 5250 1400 50  0000 L CNN
+F 2 "eduardofilo_footprints:OLED-SSD1309-SPI" H 5625 1500 50  0001 C CNN
+F 3 "" H 5625 1500 50  0001 C CNN
+	1    5625 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 60E1D257
+P 5100 1375
+F 0 "#PWR0108" H 5100 1225 50  0001 C CNN
+F 1 "+3.3V" H 5115 1548 50  0000 C CNN
+F 2 "" H 5100 1375 50  0001 C CNN
+F 3 "" H 5100 1375 50  0001 C CNN
+	1    5100 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 1650 5425 1500
+Wire Wire Line
+	5425 1500 5100 1500
+Wire Wire Line
+	5100 1500 5100 1375
+Text GLabel 5625 1450 1    50   Input ~ 0
+OLED_SDA
+Text GLabel 5525 1450 1    50   Input ~ 0
+OLED_SCL
+Wire Wire Line
+	5925 1650 5925 1450
+Wire Wire Line
+	5825 1450 5825 1650
+Wire Wire Line
+	5725 1450 5725 1650
+Wire Wire Line
+	5625 1450 5625 1650
+Wire Wire Line
+	5525 1450 5525 1650
+Text GLabel 3150 3250 2    50   Output ~ 0
+OLED_DC
+Text GLabel 3150 3150 2    50   Output ~ 0
+OLED_CS
+Text GLabel 3150 2950 2    50   Output ~ 0
+OLED_SCL
+Text GLabel 3150 2850 2    50   Output ~ 0
+OLED_SDA
+Text GLabel 3150 2750 2    50   Output ~ 0
+OLED_RES
+Wire Wire Line
+	2875 2750 3150 2750
+Wire Wire Line
+	2875 2850 3150 2850
+Wire Wire Line
+	2875 2950 3150 2950
+Wire Wire Line
+	2875 3150 3150 3150
+Wire Wire Line
+	2875 3250 3150 3250
+$Comp
+L power:GND #PWR0109
+U 1 1 60E38875
+P 2975 3525
+F 0 "#PWR0109" H 2975 3275 50  0001 C CNN
+F 1 "GND" H 2980 3352 50  0000 C CNN
+F 2 "" H 2975 3525 50  0001 C CNN
+F 3 "" H 2975 3525 50  0001 C CNN
+	1    2975 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 1550 2975 1550
+Wire Wire Line
+	2975 1550 2975 2550
+Wire Wire Line
+	2875 2550 2975 2550
+Connection ~ 2975 2550
+Wire Wire Line
+	2975 2550 2975 3050
+Wire Wire Line
+	2875 3050 2975 3050
+Connection ~ 2975 3050
+Wire Wire Line
+	2975 3050 2975 3525
+$Comp
+L power:GND #PWR0110
+U 1 1 60E3FEA2
+P 1650 3525
+F 0 "#PWR0110" H 1650 3275 50  0001 C CNN
+F 1 "GND" H 1655 3352 50  0000 C CNN
+F 2 "" H 1650 3525 50  0001 C CNN
+F 3 "" H 1650 3525 50  0001 C CNN
+	1    1650 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 1550 1650 1550
+Wire Wire Line
+	1650 1550 1650 2050
+Wire Wire Line
+	1775 2050 1650 2050
+Connection ~ 1650 2050
+Wire Wire Line
+	1650 2050 1650 2550
+Wire Wire Line
+	1775 2550 1650 2550
+Connection ~ 1650 2550
+Wire Wire Line
+	1650 2550 1650 3050
+Wire Wire Line
+	1775 3050 1650 3050
+Connection ~ 1650 3050
+Wire Wire Line
+	1650 3050 1650 3525
+$Comp
+L Device:R_POT RV1
+U 1 1 60E5D1A1
+P 5375 4350
+F 0 "RV1" H 5306 4396 50  0000 R CNN
+F 1 "Pot" H 5306 4305 50  0000 R CNN
+F 2 "eduardofilo_footprints:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_mod" H 5375 4350 50  0001 C CNN
+F 3 "~" H 5375 4350 50  0001 C CNN
+	1    5375 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDDA #PWR0111
+U 1 1 60E67402
+P 5375 4050
+F 0 "#PWR0111" H 5375 3900 50  0001 C CNN
+F 1 "VDDA" H 5390 4223 50  0000 C CNN
+F 2 "" H 5375 4050 50  0001 C CNN
+F 3 "" H 5375 4050 50  0001 C CNN
+	1    5375 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0112
+U 1 1 60E6BF1B
+P 5375 4650
+F 0 "#PWR0112" H 5375 4400 50  0001 C CNN
+F 1 "GNDA" H 5380 4477 50  0000 C CNN
+F 2 "" H 5375 4650 50  0001 C CNN
+F 3 "" H 5375 4650 50  0001 C CNN
+	1    5375 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5725 4350 2    50   Output ~ 0
+ADC1
+Wire Wire Line
+	5375 4050 5375 4200
+Wire Wire Line
+	5375 4500 5375 4650
+Wire Wire Line
+	5525 4350 5725 4350
+Text GLabel 3150 2150 2    50   Input ~ 0
+ADC1
+Wire Wire Line
+	2875 2150 3150 2150
+Wire Notes Line
+	6975 3525 4250 3525
+Wire Notes Line
+	6975 475  6975 6525
+NoConn ~ 2875 1650
+Text GLabel 3150 2450 2    50   Output ~ 0
+L_IR
+Text GLabel 3150 2650 2    50   Output ~ 0
+L_Green
+Text GLabel 1475 2350 0    50   Output ~ 0
+L_Yellow
+Text GLabel 1475 2450 0    50   Output ~ 0
+L_Red
+Wire Wire Line
+	1775 2350 1475 2350
+Wire Wire Line
+	1475 2450 1775 2450
+Wire Wire Line
+	2875 2450 3150 2450
+Wire Wire Line
+	2875 2650 3150 2650
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 60EDBAC1
+P 3150 1725
+F 0 "#PWR0113" H 3150 1575 50  0001 C CNN
+F 1 "+3.3V" H 3165 1898 50  0000 C CNN
+F 2 "" H 3150 1725 50  0001 C CNN
+F 3 "" H 3150 1725 50  0001 C CNN
+	1    3150 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 1750 3150 1750
+Wire Wire Line
+	3150 1750 3150 1725
+Text GLabel 9600 3500 1    50   BiDi ~ 0
+GP0
+Text GLabel 9700 3500 1    50   BiDi ~ 0
+GP1
+Text GLabel 9800 3500 1    50   BiDi ~ 0
+GP2
+Text GLabel 9900 3500 1    50   BiDi ~ 0
+GP3
+Text GLabel 9900 4275 3    50   BiDi ~ 0
+GP4
+Text GLabel 9800 4275 3    50   BiDi ~ 0
+GP5
+Text GLabel 9700 4275 3    50   BiDi ~ 0
+GP6
+Text GLabel 1475 2250 0    50   BiDi ~ 0
+SW_B
+Text GLabel 1475 2150 0    50   BiDi ~ 0
+GP6
+Text GLabel 1475 1950 0    50   BiDi ~ 0
+GP5
+Text GLabel 1475 1850 0    50   BiDi ~ 0
+GP4
+Text GLabel 1475 1750 0    50   BiDi ~ 0
+GP3
+Text GLabel 1475 1650 0    50   BiDi ~ 0
+GP2
+Text GLabel 1475 1450 0    50   BiDi ~ 0
+GP1
+Text GLabel 1475 1350 0    50   BiDi ~ 0
+GP0
+Wire Wire Line
+	1475 1350 1775 1350
+Wire Wire Line
+	1475 1450 1775 1450
+Wire Wire Line
+	1475 1650 1775 1650
+Wire Wire Line
+	1475 1750 1775 1750
+Wire Wire Line
+	1475 1850 1775 1850
+Wire Wire Line
+	1475 1950 1775 1950
+Wire Wire Line
+	1475 2150 1775 2150
+Wire Wire Line
+	1475 2250 1775 2250
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 60F4DD04
+P 8375 925
+F 0 "J1" V 8475 775 50  0000 L CNN
+F 1 "Bat" V 8575 775 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8375 925 50  0001 C CNN
+F 3 "~" H 8375 925 50  0001 C CNN
+	1    8375 925 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D5
+U 1 1 60F50859
+P 9325 1325
+F 0 "D5" H 9325 1542 50  0000 C CNN
+F 1 "1N5817" H 9325 1451 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 9325 1325 50  0001 C CNN
+F 3 "~" H 9325 1325 50  0001 C CNN
+	1    9325 1325
+	-1   0    0    1   
+$EndComp
+Text GLabel 9700 1325 2    50   Output ~ 0
+VSYS
+$Comp
+L power:GND #PWR0114
+U 1 1 60F78403
+P 8375 1250
+F 0 "#PWR0114" H 8375 1000 50  0001 C CNN
+F 1 "GND" H 8380 1077 50  0000 C CNN
+F 2 "" H 8375 1250 50  0001 C CNN
+F 3 "" H 8375 1250 50  0001 C CNN
+	1    8375 1250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11225 1975 6975 1975
+Text Notes 550  650  0    79   ~ 0
+Raspberry Pi Pico
+Text Notes 4350 650  0    79   ~ 0
+SSD1309 OLED Screen
+Text Notes 4350 3700 0    79   ~ 0
+Potentiometer
+Text Notes 4350 5325 0    79   ~ 0
+Buzzer
+Text Notes 7100 2150 0    79   ~ 0
+LDR
+Text Notes 550  4425 0    79   ~ 0
+D-Pad
+Text Notes 2225 4425 0    79   ~ 0
+LEDs
+Text Notes 9000 2150 0    79   ~ 0
+GPIO
+Text Notes 7100 650  0    79   ~ 0
+Battery
+Wire Wire Line
+	5575 5700 5275 5700
+$Comp
+L power:VDDA #PWR0115
+U 1 1 60DDA13A
+P 7775 3325
+F 0 "#PWR0115" H 7775 3175 50  0001 C CNN
+F 1 "VDDA" H 7790 3498 50  0000 C CNN
+F 2 "" H 7775 3325 50  0001 C CNN
+F 3 "" H 7775 3325 50  0001 C CNN
+	1    7775 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 3325 7775 3475
+Wire Wire Line
+	7775 3775 7775 3875
+Wire Wire Line
+	7775 4275 7775 4450
+Wire Wire Line
+	8000 3875 7775 3875
+Connection ~ 7775 3875
+Wire Wire Line
+	7775 3875 7775 3975
+Wire Notes Line
+	8875 1975 8875 6525
+Wire Wire Line
+	8375 1125 8375 1250
+Wire Wire Line
+	8475 1125 8475 1225
+Wire Wire Line
+	8475 1225 8625 1225
+Wire Wire Line
+	9475 1325 9700 1325
+Text GLabel 3150 2250 2    50   Input ~ 0
+ADC0
+Wire Wire Line
+	2875 2250 3150 2250
+Text GLabel 9600 4275 3    50   Output ~ 0
+ADC0
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 60D53920
+P 9500 3225
+F 0 "#PWR0116" H 9500 3075 50  0001 C CNN
+F 1 "+3.3V" H 9515 3398 50  0000 C CNN
+F 2 "" H 9500 3225 50  0001 C CNN
+F 3 "" H 9500 3225 50  0001 C CNN
+	1    9500 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 60D5419A
+P 9500 4600
+F 0 "#PWR0117" H 9500 4350 50  0001 C CNN
+F 1 "GND" H 9505 4427 50  0000 C CNN
+F 2 "" H 9500 4600 50  0001 C CNN
+F 3 "" H 9500 4600 50  0001 C CNN
+	1    9500 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 1450 2    50   Input ~ 0
+VSYS
+Wire Wire Line
+	2875 1450 3150 1450
+NoConn ~ 2875 1350
+Text GLabel 10000 3500 1    50   Input ~ 0
+VSYS
+Wire Notes Line
+	4250 5150 6975 5150
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J2
+U 1 1 60DC9B7B
+P 9700 3950
+F 0 "J2" V 9796 3562 50  0000 R CNN
+F 1 "GPIO" V 9705 3562 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 9700 3950 50  0001 C CNN
+F 3 "~" H 9700 3950 50  0001 C CNN
+	1    9700 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 3225 9500 3650
+$Comp
+L Switch:SW_SPDT SW7
+U 1 1 60E29AD0
+P 8825 1225
+F 0 "SW7" H 8825 900 50  0000 C CNN
+F 1 "SW_SPDT" H 8825 991 50  0000 C CNN
+F 2 "eduardofilo_footprints:SW_SPDT_Angled" H 8825 1225 50  0001 C CNN
+F 3 "~" H 8825 1225 50  0001 C CNN
+	1    8825 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9025 1325 9175 1325
+$Comp
+L Device:LED D2
+U 1 1 60D1E1C1
+P 3175 5050
+F 0 "D2" H 3168 5267 50  0000 C CNN
+F 1 "RED" H 3168 5176 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 3175 5050 50  0001 C CNN
+F 3 "~" H 3175 5050 50  0001 C CNN
+	1    3175 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 60D23B03
+P 1400 6700
+F 0 "SW5" H 1400 6985 50  0000 C CNN
+F 1 "A" H 1400 6894 50  0000 C CNN
+F 2 "eduardofilo_footprints:SW_PUSH_8mm_2pin" H 1400 6900 50  0001 C CNN
+F 3 "~" H 1400 6900 50  0001 C CNN
+	1    1400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 60D23717
+P 1400 6250
+F 0 "SW4" H 1400 6535 50  0000 C CNN
+F 1 "Right" H 1400 6444 50  0000 C CNN
+F 2 "eduardofilo_footprints:SW_PUSH_8mm_2pin" H 1400 6450 50  0001 C CNN
+F 3 "~" H 1400 6450 50  0001 C CNN
+	1    1400 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 60D232AD
+P 1400 5800
+F 0 "SW3" H 1400 6085 50  0000 C CNN
+F 1 "Left" H 1400 5994 50  0000 C CNN
+F 2 "eduardofilo_footprints:SW_PUSH_8mm_2pin" H 1400 6000 50  0001 C CNN
+F 3 "~" H 1400 6000 50  0001 C CNN
+	1    1400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 60D22EF1
+P 1400 5350
+F 0 "SW2" H 1400 5635 50  0000 C CNN
+F 1 "Down" H 1400 5544 50  0000 C CNN
+F 2 "eduardofilo_footprints:SW_PUSH_8mm_2pin" H 1400 5550 50  0001 C CNN
+F 3 "~" H 1400 5550 50  0001 C CNN
+	1    1400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60D2232A
+P 1400 4900
+F 0 "SW1" H 1400 5185 50  0000 C CNN
+F 1 "Up" H 1400 5094 50  0000 C CNN
+F 2 "eduardofilo_footprints:SW_PUSH_8mm_2pin" H 1400 5100 50  0001 C CNN
+F 3 "~" H 1400 5100 50  0001 C CNN
+	1    1400 4900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9025 1125
+Wire Wire Line
+	9600 3500 9600 3650
+Wire Wire Line
+	9700 3500 9700 3650
+Wire Wire Line
+	9800 3500 9800 3650
+Wire Wire Line
+	9900 3500 9900 3650
+Wire Wire Line
+	9700 4150 9700 4275
+Wire Wire Line
+	9800 4150 9800 4275
+Wire Wire Line
+	9900 4150 9900 4275
+Wire Wire Line
+	10000 3500 10000 3650
+$Comp
+L Switch:SW_Push SW6
+U 1 1 60F3DB3F
+P 1400 7150
+F 0 "SW6" H 1400 7435 50  0000 C CNN
+F 1 "B" H 1400 7344 50  0000 C CNN
+F 2 "eduardofilo_footprints:SW_PUSH_8mm_2pin" H 1400 7350 50  0001 C CNN
+F 3 "~" H 1400 7350 50  0001 C CNN
+	1    1400 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 7150 0    50   Output ~ 0
+SW_B
+Wire Wire Line
+	1600 7150 1700 7150
+Connection ~ 1700 7150
+Wire Wire Line
+	1700 7150 1700 7325
+Wire Wire Line
+	1200 7150 1100 7150
+Wire Wire Line
+	9500 4150 9500 4600
+$Comp
+L power:GND #PWR0118
+U 1 1 60FC2619
+P 10000 4600
+F 0 "#PWR0118" H 10000 4350 50  0001 C CNN
+F 1 "GND" H 10005 4427 50  0000 C CNN
+F 2 "" H 10000 4600 50  0001 C CNN
+F 3 "" H 10000 4600 50  0001 C CNN
+	1    10000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4150 10000 4600
+Wire Wire Line
+	9600 4150 9600 4275
+Text Notes 4350 6725 0    79   ~ 0
+Reset
+Text GLabel 3150 2350 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	2875 2350 3150 2350
+$Comp
+L Switch:SW_Push SW8
+U 1 1 60FF7EA8
+P 5525 7175
+F 0 "SW8" H 5525 7460 50  0000 C CNN
+F 1 "RESET" H 5525 7369 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5525 7375 50  0001 C CNN
+F 3 "~" H 5525 7375 50  0001 C CNN
+	1    5525 7175
+	1    0    0    -1  
+$EndComp
+Text GLabel 5125 7175 0    50   Output ~ 0
+RESET
+$Comp
+L power:GND #PWR01
+U 1 1 60FF9C6F
+P 5875 7300
+F 0 "#PWR01" H 5875 7050 50  0001 C CNN
+F 1 "GND" H 5880 7127 50  0000 C CNN
+F 2 "" H 5875 7300 50  0001 C CNN
+F 3 "" H 5875 7300 50  0001 C CNN
+	1    5875 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5325 7175 5125 7175
+Wire Wire Line
+	5725 7175 5875 7175
+Wire Wire Line
+	5875 7175 5875 7300
+$EndSCHEMATC

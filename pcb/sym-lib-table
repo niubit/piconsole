@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name eduardofilo_symbols)(type Legacy)(uri ${KIPRJMOD}/lib/eduardofilo_symbols.lib)(options "")(descr ""))
+  (lib (name piconsole-rescue)(type Legacy)(uri ${KIPRJMOD}/piconsole-rescue.lib)(options "")(descr ""))
+)

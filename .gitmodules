@@ -1,0 +1,3 @@
+[submodule "pcb/lib"]
+	path = pcb/lib
+	url = git@github.com:eduardofilo/kicad_footprints.git
