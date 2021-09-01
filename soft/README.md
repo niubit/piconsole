@@ -37,6 +37,13 @@ Seguir [estas instrucciones](https://arduino-pico.readthedocs.io/en/latest/insta
     * https://github.com/adafruit/Adafruit_CircuitPython_SSD1306
     * https://github.com/adafruit/Adafruit_CircuitPython_GFX
 
+# Juegos para intentar portar
+
+https://github.com/AJRussell/Tiny-Tetris
+https://github.com/cheungbx/game8266-micropython
+https://github.com/cheungbx/gameESP-micropython
+http://www.crait.net/
+
 # Soft
 
 ## Test PiConsole
