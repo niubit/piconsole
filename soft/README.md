@@ -113,3 +113,11 @@ Seguir [estas instrucciones](https://arduino-pico.readthedocs.io/en/latest/insta
 * Entorno: MicroPython
 * Código original: https://www.coderdojotc.org/micropython/
 
+## Reflejos2
+
+* Entorno: MicroPython
+* Instalación: Instalar [firmware MicroPython](https://micropython.org/download/rp2-pico/) y cargar el archivo `reflejos2.py` (renombrar a `main.py` para que se ejecute automáticamente).
+* Instrucciones: Al arrancar, se enciende el LED rojo entre 5 y 10 segundos. Los jugadores deben pulsar su botón nada más ver apagarse la luz.
+* Controles:
+    * A: Jugador 1
+    * B: Jugador 2
