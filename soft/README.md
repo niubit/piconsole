@@ -119,9 +119,11 @@ Seguir [estas instrucciones](https://arduino-pico.readthedocs.io/en/latest/insta
 
 ## CoderDojo Twin Cities
 
+Código de los ejemplos que aparecen en la web [MicroPython for Kids](https://www.coderdojotc.org/micropython/).
+
 * Directorio: CoderDojo_Twin_Cities
 * Entorno: MicroPython
-* Código original: https://www.coderdojotc.org/micropython/
+    * oled_displays_pot.py: [OLED Displays > OLED Pot](https://www.coderdojotc.org/micropython/oled/12-oled-pot/)
 
 ## Reflejos2
 
