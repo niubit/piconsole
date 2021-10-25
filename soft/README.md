@@ -135,7 +135,7 @@ Código de los ejemplos que aparecen en la web [MicroPython for Kids](https://ww
     * A: Jugador 1
     * B: Jugador 2
 
-## Colección de juegos de Thumby
+## Adaptación plataforma Thumby
 
 * Directorio: thumby_mod
 * Entorno: MicroPython
@@ -143,3 +143,12 @@ Código de los ejemplos que aparecen en la web [MicroPython for Kids](https://ww
 * Entorno IDE web adaptado a PiConsole: https://bitbucket.org/niubit/tinycircuits.github.io
 * Instalación: Instalar [firmware MicroPython](https://micropython.org/download/rp2-pico/) y cargar todos los archivos siguiendo la estructura de directorios.
 * Controles: Cruceta + A + B
+
+## Juegos Thumby
+
+Requieren las librerías de Thumby para funcionar.
+
+* Directorio: thumby_games
+* Entorno: MicroPython
+* Entorno IDE web adaptado a PiConsole: https://bitbucket.org/niubit/tinycircuits.github.io
+* Instalación: Instalar [firmware MicroPython](https://micropython.org/download/rp2-pico/) y directorio `lib` de `thumby_mod`.
