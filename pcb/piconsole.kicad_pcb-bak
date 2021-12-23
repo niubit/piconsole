@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.3)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -503,7 +503,7 @@
     (fp_text reference U1 (at 5.08 -22.86) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value Pico (at 6.64 22.86 180) (layer B.SilkS)
+    (fp_text value Pico (at 11.675 21.745 180) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_poly (pts (xy 2.484759 -11.529621) (xy 2.942167 -11.690946) (xy 3.129367 -11.803413) (xy 3.204827 -11.950242)
@@ -1578,7 +1578,7 @@
   (gr_text + (at 159.385 69.215) (layer F.SilkS) (tstamp 60F83F36)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "niubit PiConsole v6 2021" (at 130.81 137.16) (layer F.SilkS)
+  (gr_text "niubit PiConsole v7 2021" (at 130.81 137.16) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_circle (center 161.925 135.89) (end 163.425 135.89) (layer Edge.Cuts) (width 0.05) (tstamp 60F1D4C0))
