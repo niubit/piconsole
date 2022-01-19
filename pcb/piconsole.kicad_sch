@@ -2450,7 +2450,7 @@
     (property "Value" "Buzzer" (id 1) (at 148.0058 148.8948 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Buzzer_Beeper:Buzzer_12x9.5RM7.6" (id 2) (at 143.51 144.78 90)
+    (property "Footprint" "Buzzer_Beeper:MagneticBuzzer_ProSignal_ABT-410-RC" (id 2) (at 143.51 144.78 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 143.51 144.78 90)
@@ -3065,7 +3065,7 @@
       (reference "#PWR0118") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060d25ad7"
-      (reference "BZ1") (unit 1) (value "Buzzer") (footprint "Buzzer_Beeper:Buzzer_12x9.5RM7.6")
+      (reference "BZ1") (unit 1) (value "Buzzer") (footprint "Buzzer_Beeper:MagneticBuzzer_ProSignal_ABT-410-RC")
     )
     (path "/00000000-0000-0000-0000-000060d27b37"
       (reference "D1") (unit 1) (value "IR") (footprint "LED_THT:LED_D5.0mm_IRGrey")
