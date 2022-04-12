@@ -1,6 +1,6 @@
 # PiConsole - Raspberry Pi Pico Retro Console
 
-![PiConsole render](images/piconsole_v7_diag.png)
+![PiConsole render](images/piconsole_v7.png)
 
 This repository has submodules. To clone add the `--recursive` option:
 
