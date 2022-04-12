@@ -8,7 +8,7 @@ This repository has submodules. To clone add the `--recursive` option to the git
 git clone --recursive git@github.com:niubit/piconsole.git
 ```
 
-You can see a brief description (in spanish) in this site. A full description in english is coming soon on Instructables.
+You can see a brief description (in spanish) in [this site](https://niubitbox.niubit.es/docs/niubitbox005/). A full description in english is coming soon on Instructables.
 
 A collection of software for PiConsole can be found in the following repository:
 
