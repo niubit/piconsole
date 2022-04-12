@@ -1,7 +1,11 @@
-Clonar con:
+# PiConsole - Raspberry Pi Pico Retro Console
 
-git clone --recursive git@bitbucket.org:niubit/piconsole.git
+This repository has submodules. To clone add the `--recursive` option:
 
-El soft se encuentra en el siguiente repositorio público:
+```
+git clone --recursive git@github.com:niubit/piconsole.git
+```
+
+A collection of software for PiConsole can be found in the following repository:
 
 https://github.com/niubit/piconsole_soft
