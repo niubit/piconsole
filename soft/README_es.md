@@ -147,6 +147,15 @@ Colección de firmware para PiConsole.
 * Instalación: Instalar [firmware MicroPython](https://micropython.org/download/rp2-pico/) y cargar todos los archivos siguiendo la estructura de directorios.
 * Controles: Cruceta + A + B
 
+### Emulador CHIP-8
+
+* Descripción: Emulador del sistema virtual [CHIP-8](https://es.wikipedia.org/wiki/CHIP-8).
+* Directorio: [chip-8_emulator](https://github.com/niubit/piconsole_soft/tree/master/chip-8_emulator)
+* Entorno: MicroPython con [IDE web adaptado a PiConsole](https://piconsole.niubit.net/).
+* Código original: https://github.com/Wireframe-Magazine/Wireframe-54/tree/main/emulator-guide/pychip8
+* Instalación: Instalar [firmware MicroPython](https://micropython.org/download/rp2-pico/) y cargar todos los archivos siguiendo la estructura de directorios.
+* Controles: Cruceta + A + B mapeables en fichero `cpu.py`
+
 ## Pines - Componentes
 
 * Pot

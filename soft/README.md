@@ -147,6 +147,15 @@ Firmware collection for PiConsole.
 * Installation: Install [firmware MicroPython](https://micropython.org/download/rp2-pico/) and upload all the files following the directory structure.
 * Controls: D-pad + A + B
 
+### CHIP-8 emulator
+
+* Description: [CHIP-8](https://es.wikipedia.org/wiki/CHIP-8) virtual system emulator.
+* Folder: [chip-8_emulator](https://github.com/niubit/piconsole_soft/tree/master/chip-8_emulator)
+* Environment: MicroPython with [web IDE adapted to PiConsole](https://piconsole.niubit.net/).
+* Original code: https://github.com/Wireframe-Magazine/Wireframe-54/tree/main/emulator-guide/pychip8
+* Installation: Install [firmware MicroPython](https://micropython.org/download/rp2-pico/) and upload all the files following the directory structure.
+* Controls: D-pad + A + B mapped in file `cpu.py`
+
 ## Pins - Components
 
 * Pot
