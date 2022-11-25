@@ -66,6 +66,18 @@ Colección de firmware para PiConsole.
     * Abajo: Estado o Aceptar
     * Derecha: Salir
 
+### Picotamachibi
+
+* Descripción: Mascota virtual inspirada en Tamagotchi.
+* Directorio: [picotamachibi](https://github.com/niubit/piconsole_soft/tree/master/picotamachibi)
+* Entorno: MicroPython con [IDE web adaptado a PiConsole](https://piconsole.niubit.net/).
+* Código original: https://github.com/kevinmcaleer/picotamachibi
+* Instalación: Instalar [firmware MicroPython](https://micropython.org/download/rp2-pico/). Luego todos los ficheros del directorio (renombrando `picotamachibi.py` a `main.py` para que se ejecute automáticamente).
+* Controles:
+    * Derecha: Seleccionar
+    * A: Aceptar
+    * B: Cancelar
+
 ### Colección Cheungbx
 
 * Descripción: Colección de minijuegos Python.
